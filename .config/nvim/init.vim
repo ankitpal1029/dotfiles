@@ -3,6 +3,7 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/vim-plug/fzf-rg-config.vim
 source $HOME/.config/nvim/vim-plug/fugitive-config.vim
 source $HOME/.config/nvim/vim-plug/buffet-config.vim
+source $HOME/.config/nvim/vim-plug/nerdtree-config.vim
 ""
 
 " coc config

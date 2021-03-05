@@ -7,12 +7,6 @@ endif
 
 
 " Open nerdtree as soon as nvim is launched
-augroup nerdtree_open
-    autocmd!
-    autocmd VimEnter * NERDTree
-augroup END
-" ctrl+g shortcut to toggle nerdtree
-nnoremap <silent> <C-G> :NERDTreeToggle<CR>
 
 
 call plug#begin('~/.config/nvim/autoload/plugged')
@@ -51,4 +45,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'HerringtonDarkholme/yats.vim'
 
 call plug#end()
+
+
 
