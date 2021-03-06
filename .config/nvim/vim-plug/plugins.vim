@@ -43,6 +43,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     Plug 'bagrat/vim-buffet'
     Plug 'HerringtonDarkholme/yats.vim'
+    " restoring nvim sessions
+    Plug 'tpope/vim-obsession'
+
 
 call plug#end()
 
