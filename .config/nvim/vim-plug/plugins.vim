@@ -44,8 +44,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'bagrat/vim-buffet'
     Plug 'HerringtonDarkholme/yats.vim'
     " restoring nvim sessions
+    Plug 'octol/vim-cpp-enhanced-highlight'   
     Plug 'tpope/vim-obsession'
-
 
 call plug#end()
 

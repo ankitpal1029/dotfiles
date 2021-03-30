@@ -4,7 +4,7 @@ source $HOME/.config/nvim/vim-plug/fzf-rg-config.vim
 source $HOME/.config/nvim/vim-plug/fugitive-config.vim
 source $HOME/.config/nvim/vim-plug/buffet-config.vim
 source $HOME/.config/nvim/vim-plug/nerdtree-config.vim
-source $HOME/.config/nvim/vim-plug/vim-obsess-config.vim
+
 
 
 ""
@@ -78,6 +78,8 @@ augroup ReactFiletypes
 augroup END
 
 let g:typescript_indent_disable = 1
+
+set relativenumber             " Show relative line numbers
 
 
 " ===============================================================
