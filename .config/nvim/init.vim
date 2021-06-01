@@ -1,13 +1,21 @@
 let mapleader = "\<Space>"
-source $HOME/.config/nvim/vim-plug/plugins.vim
+
+
+"source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/vim-plug/fzf-rg-config.vim
 source $HOME/.config/nvim/vim-plug/fugitive-config.vim
 source $HOME/.config/nvim/vim-plug/buffet-config.vim
 source $HOME/.config/nvim/vim-plug/nerdtree-config.vim
+source $HOME/.config/nvim/vim-plug/coc-config.vim
+source $HOME/.config/nvim/vim-plug/vimspector-config.vim
+source $HOME/.config/nvim/vim-plug/dashboard-config.vim
+source $HOME/.config/nvim/vim-plug/syntastic-config.vim
 
-
-
-""
+if exists('g:vscode')
+    source $HOME/.config/nvim/vscode/settings.vim
+    source $HOME/.config/nvim/vscode/whichkey.vim
+endif
 
 " coc config
 let g:coc_global_extensions = [
@@ -24,6 +32,8 @@ syntax on
 let g:python3_host_prog = '/usr/bin/python3'
 
 set noerrorbells
+"set tabstop=2 softtabstop=2
+"set shiftwidth=2
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -47,7 +57,7 @@ colorscheme one
 "hi Normal ctermbg=16 guibg=#000000
 "hi LineNr ctermbg=16 guibg=#000000
 set background=dark
-highlight Normal guibg=black guifg=white
+highlight Normal guibg=#000000 guifg=#bcc0c4
 
 let nerdtreeshowhidden=1
 set encoding=UTF-8
@@ -81,10 +91,12 @@ let g:typescript_indent_disable = 1
 
 set relativenumber             " Show relative line numbers
 
+filetype plugin on
 
-" ===============================================================
-"                  VIM TABLINE
-" ===============================================================
-" ===============================================================
-"                  VIM TABLINE (END)
-" ===============================================================
+" Vim Buffet Tablin coloring
+function! g:BuffetSetCustomColors()
+  hi! BuffetCurrentBuffer cterm=NONE guifg=#000000 guibg=#5f8249
+  hi! BuffetBuffer cterm=NONE guifg=#000000 guibg=#7b7d79
+  hi! BuffetActiveBuffer cterm=NONE guifg=#000000 guibg=#5f8249
+endfunction
+

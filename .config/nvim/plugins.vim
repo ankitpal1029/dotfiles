@@ -43,9 +43,28 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'ryanoasis/vim-devicons'
     Plug 'bagrat/vim-buffet'
     Plug 'HerringtonDarkholme/yats.vim'
-    " restoring nvim sessions
+
+    " cpp highlight 
     Plug 'octol/vim-cpp-enhanced-highlight'   
+
+    " restoring nvim sessions
     Plug 'tpope/vim-obsession'
+    Plug 'dhruvasagar/vim-prosession'
+
+    " commenting
+    Plug 'preservim/nerdcommenter'
+
+    " Debugging
+    Plug 'puremourning/vimspector'
+    Plug 'szw/vim-maximizer'
+    Plug 'glepnir/dashboard-nvim'
+
+    " Solidity support
+    Plug 'tomlion/vim-solidity'
+    Plug 'vim-syntastic/syntastic'
+
+    " Random 
+    "Plug 'mhinz/vim-startify'
 
 call plug#end()
 
