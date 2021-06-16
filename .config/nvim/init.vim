@@ -11,6 +11,7 @@ source $HOME/.config/nvim/vim-plug/coc-config.vim
 source $HOME/.config/nvim/vim-plug/vimspector-config.vim
 source $HOME/.config/nvim/vim-plug/dashboard-config.vim
 source $HOME/.config/nvim/vim-plug/syntastic-config.vim
+source $HOME/.config/nvim/vim-plug/gitgutter-config.vim
 
 if exists('g:vscode')
     source $HOME/.config/nvim/vscode/settings.vim

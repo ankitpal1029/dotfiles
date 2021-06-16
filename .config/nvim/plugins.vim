@@ -6,23 +6,19 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 
-" Open nerdtree as soon as nvim is launched
 
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    " Plug 'sheerun/vim-polyglot'
-    " Better Js Support
-    " Plug 'pangloss/vim-javascript'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
     " Auto complete
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
     " Cool Theme
     " Plug 'morhetz/gruvbox'
+
     Plug 'rakr/vim-one'
     " Amaze grep    
     Plug 'jremmen/vim-ripgrep'
@@ -31,13 +27,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Fuzzy finding
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'stsewd/fzf-checkout.vim'
     Plug 'airblade/vim-rooter' " So that Fzf searches in project scope
+
     " Graphql support
-    " Plug 'jparise/vim-graphql'
     Plug 'maxmellon/vim-jsx-pretty'
     Plug 'leafgarland/typescript-vim'
+
     " Git integration
     Plug 'tpope/vim-fugitive'    
+    Plug 'airblade/vim-gitgutter'
     Plug 'vim-airline/vim-airline'
     " Tab line
     Plug 'ryanoasis/vim-devicons'
@@ -57,7 +56,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Debugging
     Plug 'puremourning/vimspector'
     Plug 'szw/vim-maximizer'
-    Plug 'glepnir/dashboard-nvim'
+    "Plug 'glepnir/dashboard-nvim'
 
     " Solidity support
     Plug 'tomlion/vim-solidity'
@@ -67,6 +66,3 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'mhinz/vim-startify'
 
 call plug#end()
-
-
-
