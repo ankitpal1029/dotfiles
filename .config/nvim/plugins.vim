@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " File Explorer
     Plug 'scrooloose/NERDTree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'PhilRunninger/nerdtree-visual-selection'
+
     " Auto complete
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -33,6 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Graphql support
     Plug 'maxmellon/vim-jsx-pretty'
     Plug 'leafgarland/typescript-vim'
+    Plug 'jparise/vim-graphql'
 
     " Git integration
     Plug 'tpope/vim-fugitive'    
@@ -63,6 +66,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-syntastic/syntastic'
 
     " Random 
-    "Plug 'mhinz/vim-startify'
+    Plug 'cdelledonne/vim-cmake'
+
+    " React Snippets
+    Plug 'SirVer/ultisnips'
+    Plug 'mlaursen/vim-react-snippets'
+
+    " Prettier Setup
+    Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+
 
 call plug#end()

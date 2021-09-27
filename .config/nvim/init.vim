@@ -13,6 +13,8 @@ source $HOME/.config/nvim/vim-plug/dashboard-config.vim
 source $HOME/.config/nvim/vim-plug/syntastic-config.vim
 source $HOME/.config/nvim/vim-plug/gitgutter-config.vim
 
+
+
 if exists('g:vscode')
     source $HOME/.config/nvim/vscode/settings.vim
     source $HOME/.config/nvim/vscode/whichkey.vim
@@ -33,10 +35,10 @@ syntax on
 let g:python3_host_prog = '/usr/bin/python3'
 
 set noerrorbells
-"set tabstop=2 softtabstop=2
-"set shiftwidth=2
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=2 softtabstop=2
+set shiftwidth=2
+"set tabstop=4 softtabstop=4
+"set shiftwidth=4
 set expandtab
 set smartindent
 set nu

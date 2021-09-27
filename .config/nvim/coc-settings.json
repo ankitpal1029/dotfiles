@@ -4,6 +4,11 @@
   "codeLens.enable": false,
   "coc.preferences.jumpCommand": "vsplit",
   "html.autoClosingTags": true,
-  "languageserver": {
+      "languageserver": {
+        "graphql": {
+        "command": "graphql-lsp",
+        "args": ["server", "-m", "stream"],
+        "filetypes": ["typescript", "typescriptreact", "graphql","javascriptreact"]
+      }
     }
 }
