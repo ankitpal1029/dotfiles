@@ -12,6 +12,7 @@ source $HOME/.config/nvim/vim-plug/vimspector-config.vim
 source $HOME/.config/nvim/vim-plug/dashboard-config.vim
 source $HOME/.config/nvim/vim-plug/syntastic-config.vim
 source $HOME/.config/nvim/vim-plug/gitgutter-config.vim
+source $HOME/.config/nvim/vim-plug/prettier-config.vim
 
 
 

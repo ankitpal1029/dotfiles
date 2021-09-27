@@ -59,3 +59,6 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+xmap <leader>a  <Plug>(coc-codeaction-cursor)
+nmap <leader>a  <Plug>(coc-codeaction-cursor)
