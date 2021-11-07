@@ -705,5 +705,5 @@ for_window [class="Mozilla Firefox"] focus
 exec --no-startup-id "i3-msg 'workspace 1; exec brave-browser;'"
 exec --no-startup-id "i3-msg 'workspace 10; exec discord;'"
 exec --no-startup-id "i3-msg 'workspace 2; exec alacritty;'"
-exec --no-startup-id "i3-msg 'workspace 2; exec mongodb-compass;'"
-exec --no-startup-id "i3-msg 'workspace 2; exec postman;'"
+exec --no-startup-id "i3-msg 'workspace 8; exec mongodb-compass;'"
+exec --no-startup-id "i3-msg 'workspace 8; exec postman;'"
